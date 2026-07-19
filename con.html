@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | VeKnova Technologies</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f7fb;
+overflow-x:hidden;
+}
+
+/* Navigation */
+
+nav{
+background:#0B3D91;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:26px;
+font-weight:bold;
+}
+
+.menu-btn{
+font-size:30px;
+color:white;
+cursor:pointer;
+}
+
+.menu{
+position:fixed;
+top:65px;
+right:-260px;
+width:250px;
+height:100%;
+background:#0B3D91;
+transition:.4s;
+}
+
+.menu.active{
+right:0;
+}
+
+.menu a{
+display:block;
+padding:18px;
+color:white;
+text-decoration:none;
+font-size:18px;
+border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.menu a:hover{
+background:#1565C0;
+}
+
+/* Banner */
+
+.banner{
+margin-top:65px;
+background:linear-gradient(135deg,#0B3D91,#2196F3);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.banner h1{
+font-size:45px;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:40px auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.box h2{
+color:#0B3D91;
+margin-bottom:20px;
+}
+
+.box p{
+margin:15px 0;
+line-height:28px;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin-top:15px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+textarea{
+height:150px;
+resize:none;
+}
+
+button{
+width:100%;
+margin-top:20px;
+padding:15px;
+background:#0B3D91;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1565C0;
+}
+
+footer{
+background:#0B3D91;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.logo{
+font-size:20px;
+}
+
+.menu{
+width:100%;
+right:-100%;
+}
+
+.menu.active{
+right:0;
+}
+
+.banner h1{
+font-size:32px;
+}
+
+.container{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VeKnova Technologies</div>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<div class="menu" id="menu">
+
+<a href="index.html">🏠 Home</a>
+<a href="us.html">ℹ About Us</a>
+<a href="str.html">📈 Strategy</a>
+<a href="workk.html">💻 Works</a>
+<a href="proj.html">📂 Projects</a>
+<a href="founder.html">👨 Founder</a>
+<a href="con.html">📞 Contact</a>
+
+</div>
+
+</nav>
+
+<section class="banner">
+
+<h1>Contact Us</h1>
+
+<p>Let's Build the Future Together</p>
+
+</section>
+
+<div class="container">
+
+<div class="box">
+
+<h2>Contact Information</h2>
+
+<p><b>📍 Address:</b> Karur, Tamil Nadu, India</p>
+
+<p><b>📧 Email:</b>veknovatechnologies@gmail.com</p>
+
+<p><b>📞 Phone:</b> +91 9952388388</p>
+
+<p><b>🌐 Website:</b> www.veknova.com</p>
+
+<p>
+
+We'd love to hear from you. Contact us for websites, software, AI solutions, programming training, or technology consulting.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h2>Send Message</h2>
+
+<form action="mailto:your@email.com" method="post" enctype="text/plain">
+
+<input type="text" name="Name" placeholder="Your Name" required>
+
+<input type="email" name="Email" placeholder="Your Email" required>
+
+<input type="text" name="Subject" placeholder="Subject" required>
+
+<textarea name="Message" placeholder="Type your message..." required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+
+<h2>VeKnova Technologies</h2>
+
+<p>Innovate • Create • Grow</p>
+
+<p>© 2026 VeKnova Technologies. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
+
+</script>
+
+</body>
+</html>

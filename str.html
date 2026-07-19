@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Strategy | VeKnova Technologies</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+overflow-x:hidden;
+}
+
+/* Navigation */
+
+nav{
+background:#0B3D91;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:26px;
+font-weight:bold;
+}
+
+.menu-btn{
+font-size:30px;
+color:white;
+cursor:pointer;
+}
+
+.menu{
+position:fixed;
+top:65px;
+right:-260px;
+width:250px;
+height:100%;
+background:#0B3D91;
+transition:.4s;
+}
+
+.menu.active{
+right:0;
+}
+
+.menu a{
+display:block;
+padding:18px;
+color:white;
+text-decoration:none;
+font-size:18px;
+border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.menu a:hover{
+background:#1565C0;
+}
+
+/* Banner */
+
+.banner{
+margin-top:65px;
+background:linear-gradient(135deg,#0B3D91,#2196F3);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.banner h1{
+font-size:45px;
+}
+
+.banner p{
+font-size:18px;
+margin-top:10px;
+}
+
+/* Strategy */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:40px auto;
+}
+
+.card{
+background:white;
+padding:30px;
+margin-bottom:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.card h2{
+color:#0B3D91;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:17px;
+line-height:30px;
+text-align:justify;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.step{
+background:#0B3D91;
+color:white;
+padding:25px;
+border-radius:12px;
+text-align:center;
+transition:.3s;
+}
+
+.step:hover{
+background:#1565C0;
+transform:translateY(-8px);
+}
+
+.step h3{
+margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+background:#0B3D91;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.logo{
+font-size:20px;
+}
+
+.banner h1{
+font-size:32px;
+}
+
+.banner p{
+font-size:16px;
+}
+
+.menu{
+width:100%;
+right:-100%;
+}
+
+.menu.active{
+right:0;
+}
+
+.card p{
+font-size:16px;
+line-height:28px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VeKnova Technologies</div>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<div class="menu" id="menu">
+
+<a href="index.html">🏠 Home</a>
+
+<a href="us.html">ℹ About Us</a>
+
+<a href="str.html">📈 Strategy</a>
+
+<a href="workk.html">💻 Works</a>
+
+<a href="proj.html">📂 Projects</a>
+
+<a href="founder.html">👨 Founder</a>
+
+<a href="con.html">📞 Contact</a>
+
+</div>
+
+</nav>
+
+<section class="banner">
+
+<h1>Our Strategy</h1>
+
+<p>Building Success Through Innovation & Technology</p>
+
+</section>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Our Business Strategy</h2>
+
+<p>
+
+At VeKnova Technologies, our strategy is to deliver innovative, affordable, and high-quality technology solutions that help businesses grow and students develop future-ready skills. We focus on continuous learning, customer satisfaction, and adopting the latest technologies to create lasting value.
+
+</p>
+
+</div>
+
+<div class="steps">
+
+<div class="step">
+
+<h3>1️⃣ Understand</h3>
+
+<p>Analyze client requirements and business goals.</p>
+
+</div>
+
+<div class="step">
+
+<h3>2️⃣ Design</h3>
+
+<p>Create modern, user-friendly and responsive solutions.</p>
+
+</div>
+
+<div class="step">
+
+<h3>3️⃣ Develop</h3>
+
+<p>Build secure websites, software and AI solutions.</p>
+
+</div>
+
+<div class="step">
+
+<h3>4️⃣ Test</h3>
+
+<p>Ensure quality, performance and security.</p>
+
+</div>
+
+<div class="step">
+
+<h3>5️⃣ Launch</h3>
+
+<p>Deploy projects with complete client support.</p>
+
+</div>
+
+<div class="step">
+
+<h3>6️⃣ Improve</h3>
+
+<p>Continuously update and enhance our solutions.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h2>VeKnova Technologies</h2>
+
+<p>Innovate • Create • Grow</p>
+
+<p>© 2026 VeKnova Technologies. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
+
+</script>
+
+</body>
+</html>

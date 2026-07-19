@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VeKnova Technologies</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+overflow-x:hidden;
+}
+
+/* Navigation */
+
+nav{
+background:#0B3D91;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:28px;
+font-weight:bold;
+}
+
+.menu-btn{
+font-size:32px;
+color:white;
+cursor:pointer;
+}
+
+.menu{
+position:fixed;
+top:65px;
+right:-260px;
+width:250px;
+height:100%;
+background:#0B3D91;
+transition:.4s;
+}
+
+.menu.active{
+right:0;
+}
+
+.menu a{
+display:block;
+padding:18px;
+color:white;
+text-decoration:none;
+font-size:18px;
+border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.menu a:hover{
+background:#1565C0;
+}
+
+/* Hero */
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:800px;
+line-height:34px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:15px 35px;
+background:#FFD700;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-size:18px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* Services */
+
+.services{
+padding:70px 20px;
+text-align:center;
+}
+
+.services h2{
+font-size:40px;
+color:#0B3D91;
+margin-bottom:40px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.card{
+background:white;
+width:280px;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#0B3D91;
+margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+background:#0B3D91;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.logo{
+font-size:22px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:16px;
+line-height:28px;
+}
+
+.menu{
+width:100%;
+right:-100%;
+}
+
+.menu.active{
+right:0;
+}
+
+.card{
+width:100%;
+max-width:350px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VeKnova Technologies</div>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<div class="menu" id="menu">
+
+<a href="index.html">🏠 Home</a>
+
+<a href="us.html">ℹ About Us</a>
+
+<a href="str.html">📈 Strategy</a>
+
+<a href="workk.html">💻 Works</a>
+
+<a href="proj.html">📂 Projects</a>
+
+<a href="founder.html">👨 Founder</a>
+
+<a href="con.html">📞 Contact</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Welcome to VeKnova Technologies</h1>
+
+<p>
+
+Empowering businesses and students through innovative Website Development,
+Software Development, Artificial Intelligence, Programming Training,
+and Digital Transformation.
+
+</p>
+
+<a href="us.html" class="btn">Explore More</a>
+
+</div>
+
+</section>
+
+<section class="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌐 Web Development</h3>
+<p>Professional websites for businesses, startups and organizations.</p>
+</div>
+
+<div class="card">
+<h3>💻 Software Development</h3>
+<p>Custom software solutions for modern businesses.</p>
+</div>
+
+<div class="card">
+<h3>🤖 AI Solutions</h3>
+<p>Smart AI applications and automation for better productivity.</p>
+</div>
+
+<div class="card">
+<h3>🎓 Programming Training</h3>
+<p>Live coding classes, webinars and career guidance.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>VeKnova Technologies</h2>
+
+<p>Innovate • Create • Grow</p>
+
+<p>© 2026 VeKnova Technologies. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+</script>
+
+</body>
+</html>
